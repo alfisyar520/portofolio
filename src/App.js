@@ -1,8 +1,76 @@
+import { useState } from "react";
 import profil from "./assets/img/alfisyar.png";
+import { useEffect } from "react";
+import baymaksImage from "./assets/portofolio/Baymaks/Web Publik.png";
+import botImage from "./assets/portofolio/bot telegram/Screenshot_20210817_153718.jpg";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+
+  const handleHamburgerClick = () => {
+    setIsOpen(!isOpen);
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('header');
+      const fixedNav = header.offsetTop;
+
+      if (window.pageYOffset > fixedNav) {
+        setIsNavbarFixed(true);
+      } else {
+        setIsNavbarFixed(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
+
   return (
     <div>
+      {/* Header section */}
+      <header className={`${isNavbarFixed && 'navbar-fixed'} bg-transparent absolute top-0 left-0 w-full flex items-center z-10`}>
+        <div className="container">
+          <div className="flex items-center justify-between relative">
+            <div className="px-4">
+              <a href="#home" className="font-bold text-lg text-primary block py-6">alfisyar</a>
+            </div>
+            <div className="flex items-center px-4">
+              <button id="hamburger" name="hamburger" type="button" className={`block absolute right-4 lg:hidden ${isOpen && 'hamburger-active'}`} onClick={handleHamburgerClick}>
+                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out"></span>
+                <span className="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+              </button>
+
+              <nav id="nav-menu" className={`${!isOpen && 'hidden'} absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none`}>
+                <ul className="block lg:flex">
+                  <li className="group">
+                    <a href="#home" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                  </li>
+                  <li className="group">
+                    <a href="#about" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About</a>
+                  </li>
+                  <li className="group">
+                    <a href="#portofolio" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                  </li>
+                  <li className="group">
+                    <a href="#contact" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                  </li>
+
+                </ul>
+
+              </nav>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
       {/* hero section */}
       <section id="home" className="pt-36">
         <div className="container">
@@ -80,6 +148,36 @@ function App() {
         </div>
       </section>
 
+      {/* portofolio */}
+      <section id="portofolio" className="pt-36 pb-16 bg-slate-100">
+        <div className="container">
+          <div className="w-full px-4">
+            <div className="max-w-xl mx-auto text-center mb-16">
+              <h4 className="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+              <h2 className="font-bold text-dark text-3xl mb-4">New Project</h2>
+              <p className="font-medium text-md text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
+
+            </div>
+
+            <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+              <div className="mb-12 p-4 md:w-1/2">
+                <div className="rounded-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
+                  <img className="object-cover object-center" src={baymaksImage} alt="" width={'w-full'}></img>
+                </div>
+                <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Landing page</h3>
+                <p className="font-medium text-base text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+              </div>
+              <div className="mb-12 p-4 md:w-1/2">
+                <div className="rounded-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
+                  <img className="object-cover object-center" src={botImage} alt="" width={'w-full'}></img>
+                </div>
+                <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Landing page</h3>
+                <p className="font-medium text-base text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
