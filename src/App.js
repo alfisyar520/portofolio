@@ -3,6 +3,7 @@ import profil from "./assets/img/alfisyar.png";
 import { useEffect } from "react";
 import baymaksImage from "./assets/portofolio/Baymaks/Web Publik.png";
 import botImage from "./assets/portofolio/bot telegram/Screenshot_20210817_153718.jpg";
+import { ListPortofolio } from "./utils/constant.js";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +39,7 @@ function App() {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
-              <a href="#home" className="font-bold text-lg text-primary block py-6">alfisyar</a>
+              <a href="#home" className="font-bold text-lg text-primary block py-6">Alfisyar Jefry Pranata</a>
             </div>
             <div className="flex items-center px-4">
               <button id="hamburger" name="hamburger" type="button" className={`block absolute right-4 lg:hidden ${isOpen && 'hamburger-active'}`} onClick={handleHamburgerClick}>
@@ -59,7 +60,7 @@ function App() {
                     <a href="#portofolio" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
                   </li>
                   <li className="group">
-                    <a href="#contact" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                    <a href="https://www.linkedin.com/in/alfisyar-jefry-pranata-668833193/" target="_blank" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
                   </li>
 
                 </ul>
@@ -77,20 +78,21 @@ function App() {
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
               <h1 className="text-base font-semibold text-primary md:text-xl lg:text-2xl">
-                Halo Semua, Saya
+                Hello Everyone, I'm
                 <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">
                   Alfisyar Jefry Pranata
                 </span>
               </h1>
               <h2 className="font-medium text-secondary text-lg mb-5 mt-1 lg:text-2xl">
-                Frontend Developer
+                Fullstack Developer
               </h2>
               <p className="font-medium text-secondary mb-10 leading-relaxed">
                 I’am interested in programming because it can help someone to
                 solve a problem.
               </p>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/alfisyar-jefry-pranata-668833193/"
+                target="_blank"
                 className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >
                 Contact Me
@@ -128,13 +130,9 @@ function App() {
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full px-4 mb-10 lg:w-1/2">
-              <h4 className="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
-              <h2 className="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl">Yuk, Kenalan dengan saya</h2>
-              <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-            </div>
-            <div className="w-full px-4 lg:w-1/2">
-              <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
-              <p className="font-medium text-base text-secondary mb-6 lg:text-lg">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+              <h4 className="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+              <h2 className="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl">Who Am I?</h2>
+              <p className="font-medium text-base text-secondary max-w-xl lg:text-lg mb-6">I am a website-based Full Stack Developer, dedicated to leveraging cutting-edge technologies to create dynamic, user-friendly applications. My journey in the world of development began when I graduated from Brawijaya University in 2021, and since then, I have been committed to mastering the art of frontend and backend development.</p>
               <div className="flex items-center">
                 <a href="https://www.linkedin.com/in/alfisyar-jefry-pranata-668833193/" target="_blank" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white text-slate-300">
                   <svg className="fill-current" role="img" width={20} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg>
@@ -144,36 +142,47 @@ function App() {
                 </a>
               </div>
             </div>
+            <div className="w-full px-4 lg:w-1/2">
+              <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">What Do I Do?</h3>
+              <p className="font-medium text-base text-secondary lg:text-lg">In my career, I've had the privilege to work on a diverse range of projects. Whether it's crafting responsive user interfaces with HTML, CSS, and JavaScript (React.js, Vue.js) or designing scalable backend systems with Node.js, Express, and databases like SQL, I'm adept at every stage of the development process.</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* portofolio */}
-      <section id="portofolio" className="pt-36 pb-16 bg-slate-100">
+      <section id="portofolio" className="pt-24 pb-16 bg-slate-100">
         <div className="container">
           <div className="w-full px-4">
             <div className="max-w-xl mx-auto text-center mb-16">
               <h4 className="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4">New Project</h2>
-              <p className="font-medium text-md text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </p>
-
+              <h2 className="font-bold text-dark text-3xl mb-4">Recent Project</h2>
+              <p className="font-medium text-md text-secondary">I proudly have several projects that I have worked on that I consider to be an important part of my portfolio. My portfolio includes a variety of projects, including mobile application creation, responsive website creation, and many more. I hope that through this portfolio, I can demonstrate my abilities and creativity to potential clients and prove that I am the right solution for their needs.</p>
             </div>
 
             <div className="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-              <div className="mb-12 p-4 md:w-1/2">
-                <div className="rounded-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
-                  <img className="object-cover object-center" src={baymaksImage} alt="" width={'w-full'}></img>
-                </div>
-                <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Landing page</h3>
-                <p className="font-medium text-base text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
-              </div>
-              <div className="mb-12 p-4 md:w-1/2">
-                <div className="rounded-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
-                  <img className="object-cover object-center" src={botImage} alt="" width={'w-full'}></img>
-                </div>
-                <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Landing page</h3>
-                <p className="font-medium text-base text-secondary">Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</p>
-              </div>
+              {
+                ListPortofolio.map(portofolioItem => (
+                  <div className="mb-12 p-4 md:w-1/2">
+                    <div className="bg-white rounded-md shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                      <div className="rounded-t-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
+                        <img className="object-cover object-center" src={portofolioItem.image} alt="" width={'w-full'}></img>
+                      </div>
+                      <div className="py-8 px-6">
+                        <h3 className="mb-3">
+                          <a className="font-semibold text-xl text-dark hover:text-primary" href={portofolioItem.link} target="_blank">
+                            {portofolioItem.title}
+                          </a>
+                        </h3>
+                        <p className="font-medium text-base text-secondary text-justify line-clamp-3 mb-6">{portofolioItem.description}</p>
+                        <a href={portofolioItem.link} className="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80" target="_blank">
+                          See More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
         </div>
