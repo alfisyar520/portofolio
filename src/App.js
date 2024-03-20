@@ -144,7 +144,7 @@ function App() {
             </div>
             <div className="w-full px-4 lg:w-1/2">
               <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">What Do I Do?</h3>
-              <p className="font-medium text-base text-secondary lg:text-lg">In my career, I've had the privilege to work on a diverse range of projects. Whether it's crafting responsive user interfaces with HTML, CSS, and JavaScript or designing scalable backend systems with Node.js, Express, and databases like MongoDB or SQL, I'm adept at every stage of the development process.</p>
+              <p className="font-medium text-base text-secondary lg:text-lg">In my career, I've had the privilege to work on a diverse range of projects. Whether it's crafting responsive user interfaces with HTML, CSS, and JavaScript (React.js, Vue.js) or designing scalable backend systems with Node.js, Express, and databases like SQL, I'm adept at every stage of the development process.</p>
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@ function App() {
           <div className="w-full px-4">
             <div className="max-w-xl mx-auto text-center mb-16">
               <h4 className="font-semibold text-lg text-primary mb-2">Portofolio</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4">New Project</h2>
+              <h2 className="font-bold text-dark text-3xl mb-4">Recent Project</h2>
               <p className="font-medium text-md text-secondary">I proudly have several projects that I have worked on that I consider to be an important part of my portfolio. My portfolio includes a variety of projects, including mobile application creation, responsive website creation, and many more. I hope that through this portfolio, I can demonstrate my abilities and creativity to potential clients and prove that I am the right solution for their needs.</p>
             </div>
 
