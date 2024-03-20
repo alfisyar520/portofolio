@@ -164,7 +164,7 @@ function App() {
               {
                 ListPortofolio.map(portofolioItem => (
                   <div className="mb-12 p-4 md:w-1/2">
-                    <div className="bg-white rounded-md shadow-lg">
+                    <div className="bg-white rounded-md shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                       <div className="rounded-t-md shadow-md h-[250px] overflow-hidden flex justify-center items-center">
                         <img className="object-cover object-center" src={portofolioItem.image} alt="" width={'w-full'}></img>
                       </div>
