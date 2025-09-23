@@ -8,8 +8,42 @@ import intanKalselImage from "../assets/portofolio/Intan Kalsel/Peta kalimantan.
 import cpiQrPromoImage from "../assets/portofolio/CPI/Login.png";
 import productionEnterpriseImage from "../assets/portofolio/Production Enterprise/login.png";
 import inovasi360Image from "../assets/portofolio/Inovasi 360/home.png";
+import ipjImage from "../assets/portofolio/IPJ/IPJ.jpeg";
+import joumpaImage from "../assets/portofolio/Joumpa/web admin.jpeg";
+import dzikraImage from "../assets/portofolio/Dzikra/web admin.jpeg";
+import pvImage from "../assets/portofolio/PV/web admin.jpeg";
 
 export const ListPortofolio = [
+    {
+        title: 'Pharmacovigilance',
+        image: pvImage,
+        link: null,
+        description: 'Berkontribusi sebagai fullstack developer untuk mengembakan fitur-fitur tambahan pada sistem Pharmacovigilance yang digunakan pencatatan atau pendokumentasian dari kasus yang terjadi terhadap reaksi vaksin atau obat. Sistem ini dikembangkan menggunakan .NET dan database SQL Server.',
+    },
+    {
+        title: 'Dzikra Application',
+        image: dzikraImage,
+        link: null,
+        description: 'Berkontribusi sebagai backend developer untuk mengembangkan dan mengoptimalkan fitur backend menggunakan Java Spring Boot, termasuk perancangan dan pengelolaan struktur basis data, pembuatan RESTful API, serta integrasi dengan sistem autentikasi. Melakukan refactoring code, optimasi query, dan penanganan error untuk meningkatkan performa dan keandalan sistem. Aplikasi ini merupakan product dari perusahaan PT Bejana Investidata Globalindo, digunakan untuk membangun kebiasaan baik di tengah mobilitas yang tinggi untuk tetap konsisten dalam beribadah sehari-hari, seperti membaca Al-Qur’an, Dzikir, dan sebagainya.',
+    },
+    {
+        title: 'JOUMPA Management System',
+        image: joumpaImage,
+        link: null,
+        description: 'Berkontribusi sebagai pengembang backend menggunakan Java Spring Boot untuk membangun dan mengelola RESTful API pada sistem web back office dan web publik. Bertanggung jawab dalam merancang struktur database, mengelola autentikasi dan otorisasi pengguna, serta memastikan integrasi data yang andal antara frontend dan backend. Aplikasi ini bertujuan untuk memantau pelayanan asistensi, memfasilitasi monitoring layanan secara real-time, serta menghasilkan laporan untuk pengelolaan data penumpang dan reservasi layanan, baik untuk kebutuhan publik maupun internal.',
+    },
+    {
+        title: 'Info Pangan Jakarta',
+        image: ipjImage,
+        link: null,
+        description: 'Berkontribusi sebagai pengembang web yang menangani pengembangan dari sisi frontend dan backend dalam satu kesatuan sistem aplikasi. Pada sisi frontend, membangun antarmuka pengguna yang interaktif dan responsif menggunakan ReactJS, sesuai dengan desain UI/UX yang telah dirancang. Di sisi backend, menggunakan Express.js (Node.js) untuk membangun RESTful API, mengelola routing, middleware, autentikasi, otorisasi, serta menghubungkan sistem dengan database. Berperan penting dalam memastikan komunikasi data antara frontend dan backend berjalan optimal dan efisien.',
+    },
+    {
+        title: 'CTMS',
+        image: inovasi360Image,
+        link: null,
+        description: 'Inovasi 360 merupakan sebuah sarana website untuk branding perusahaan sehingga diharapkan user dapat mengenal lebih dalam terkait perusahaan Inovasi 360 beserta produk di dalamnya. Selain itu, user dapat tertarik untuk bekerja sama membangun aplikasi bersama Inovasi 360 maupun memulai kebiasaan baik menggunakan produk-produk Inovasi 360. Teknologi yang digunakan untuk membangun website ini adalah CMS headless dengan NextJs dan WPGraphQL untuk Wordpress.\n Berkontribusi sebagai pengembang web untuk antarmuka pengguna web dan CMS. Mewujudkan desain dari prototype menjadi web user interface dengan NextJS. Kemudian mengintegrasikannya dengan Axios untuk mendapatkan konten dari CMS Wordpress.\n Fitur-fitur web ini adalah beranda, product, portofolio, career, story, dll.',
+    },
     {
         title: 'Inovasi 360',
         image: inovasi360Image,
@@ -64,4 +98,18 @@ export const ListPortofolio = [
         link: 'https://medium.com/@alfisyarpranata/halo-dokter-dca50f602bce',
         description: 'Halo Dokter merupakan sebuah aplikasi yang digunakan untuk menentukan penyakit mata menggunakan metode Fuzzy Tsukamoto. Aplikasi ini akan membantu menganalisis apakah mata penggunanya mengalami sakit mata atau tidak dengan cara mengisi beberapa parameter yang disediakan. Teknologi yang dipakai pada aplikasi ini adalah dengan menggunakan Java untuk membuat aplikasi mobile. Aplikasi ini dikerjakan pada November 2019 sampai Desember 2019 dengan 3 pengembang di tim saya.\n Kontribusi saya dalam proyek ini adalah sebagai pengembang aplikasi mobile, membuat User Interface dengan Java, kemudian di integrasiikan dengan algoritma Fuzzy Tsukamoto.\n Fitur-fitur aplikasi ini adalah dashboard, cek parameter Kesehatan, hasil diagnosa.',
     },
+]
+
+export const ListCertificate = [
+    { title: "Belajar Fundamental Front-End Web Development", issuer: "Dicoding" },
+    { title: "Belajar Dasar Pemrograman Web", issuer: "Dicoding" },
+    { title: "Belajar Dasar Pemrograman JavaScript", issuer: "Dicoding" },
+    { title: "Belajar Membuat Front-End Web untuk Pemula", issuer: "Dicoding" },
+    { title: "SQL (Intermediate)", issuer: "HackerRank" },
+    { title: "SQL (Basic)", issuer: "HackerRank" },
+    { title: "SQL (Advanced)", issuer: "HackerRank" },
+    { title: "JavaScript (Intermediate)", issuer: "HackerRank" },
+    { title: "JavaScript (Basic)", issuer: "HackerRank" },
+    { title: "CSS (Basic)", issuer: "HackerRank" },
+    { title: "The Complete - React Js & Redux Course - Build Modern Web Apps", issuer: "Udemy" },
 ]
