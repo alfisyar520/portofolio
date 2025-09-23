@@ -8,6 +8,7 @@ import intanKalselImage from "../assets/portofolio/Intan Kalsel/Peta kalimantan.
 import cpiQrPromoImage from "../assets/portofolio/CPI/Login.png";
 import productionEnterpriseImage from "../assets/portofolio/Production Enterprise/login.png";
 import inovasi360Image from "../assets/portofolio/Inovasi 360/home.png";
+import ctmsImage from "../assets/portofolio/CTMS/web admin.jpeg";
 import ipjImage from "../assets/portofolio/IPJ/IPJ.jpeg";
 import joumpaImage from "../assets/portofolio/Joumpa/web admin.jpeg";
 import dzikraImage from "../assets/portofolio/Dzikra/web admin.jpeg";
@@ -40,7 +41,7 @@ export const ListPortofolio = [
     },
     {
         title: 'CTMS',
-        image: inovasi360Image,
+        image: ctmsImage,
         link: null,
         description: 'Inovasi 360 merupakan sebuah sarana website untuk branding perusahaan sehingga diharapkan user dapat mengenal lebih dalam terkait perusahaan Inovasi 360 beserta produk di dalamnya. Selain itu, user dapat tertarik untuk bekerja sama membangun aplikasi bersama Inovasi 360 maupun memulai kebiasaan baik menggunakan produk-produk Inovasi 360. Teknologi yang digunakan untuk membangun website ini adalah CMS headless dengan NextJs dan WPGraphQL untuk Wordpress.\n Berkontribusi sebagai pengembang web untuk antarmuka pengguna web dan CMS. Mewujudkan desain dari prototype menjadi web user interface dengan NextJS. Kemudian mengintegrasikannya dengan Axios untuk mendapatkan konten dari CMS Wordpress.\n Fitur-fitur web ini adalah beranda, product, portofolio, career, story, dll.',
     },
