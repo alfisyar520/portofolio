@@ -3,10 +3,10 @@ const PortfolioCard = ({ portfolioItem }) => {
 
   return (
     <div className="group bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-slate-100 h-full flex flex-col">
-      <div className="relative h-[250px] overflow-hidden bg-gradient-to-br from-primary/10 to-cyan-500/10">
+      <div className="relative h-[250px] overflow-hidden bg-gradient-to-br flex items-center justify-center">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
         <img
-          className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+          className="object-contain w-full h-full max-w-full max-h-full group-hover:scale-110 transition-transform duration-500"
           src={image}
           alt={title}
         />
